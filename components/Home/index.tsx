@@ -1,10 +1,13 @@
 import type { NextPage } from 'next'
+import { Center, Heading } from '@chakra-ui/react'
 
 const Home: NextPage = () => {
 
     return (
         <>
-            <h1>Home</h1>
+            <Center>
+                <Heading>Home</Heading>
+            </Center>
         </>
     )
 }
