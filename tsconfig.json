@@ -23,6 +23,9 @@
       "@components*": [
         "components*"
       ],
+      "@custom-types*": [
+        "custom-types*"
+      ],
     }
   },
   "include": [

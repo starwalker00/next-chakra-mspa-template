@@ -1,11 +1,14 @@
-import type { AppProps } from 'next/app'
+import { AppPropsWithLayout } from '@custom-types/page'
+
 import { ChakraProvider } from '@chakra-ui/react'
 import theme from '../theme'
 
-function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppPropsWithLayout) {
+  // Use the layout defined at the page level, if available
+  const getLayout = Component.getLayout ?? ((page) => page)
   return (
     <ChakraProvider resetCSS theme={theme}>
-      <Component {...pageProps} />
+      {getLayout(<Component {...pageProps} />)}
     </ChakraProvider>
   )
 }
