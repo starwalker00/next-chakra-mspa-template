@@ -1,6 +1,6 @@
 import type { NextPageWithLayout } from '@custom-types/page'
 import type { ReactElement } from 'react'
-
+import { Layout, Sidebar } from '@components/Layout'
 import { Center, Heading } from '@chakra-ui/react'
 
 const About: NextPageWithLayout = () => {
@@ -15,9 +15,10 @@ const About: NextPageWithLayout = () => {
 
 About.getLayout = function getLayout(page: ReactElement) {
     return (
-        <div>
+        <Layout>
+            <Sidebar />
             {page}
-        </div>
+        </Layout>
     )
 }
 
