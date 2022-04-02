@@ -1,4 +1,4 @@
-import { AppPropsWithLayout } from '@custom-types/page'
+import type { AppPropsWithLayout } from '@custom-types/page'
 
 import { ChakraProvider } from '@chakra-ui/react'
 import theme from '../theme'
