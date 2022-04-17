@@ -1,6 +1,6 @@
-import type { NextPageWithLayout } from '@custom-types/page'
+import type { NextPageWithLayout } from 'src/custom-types/page'
 import type { ReactElement } from 'react'
-import { Layout, Navbar } from '@components/Layout'
+import { Layout, Navbar } from 'src/components/Layout'
 import { Center, Heading } from '@chakra-ui/react'
 
 const About: NextPageWithLayout = () => {
